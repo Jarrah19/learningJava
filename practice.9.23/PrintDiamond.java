@@ -21,7 +21,7 @@ public class PrintDiamond {
 
             for (int j = 0; j < n; j++) {
 
-                if (((i <= n / 2 ) && ((j >= n / 2 - i) && (j <= i + n / 2))) || ((i > n/2 ) && ((j >= i - n / 2) && (j <= (2 * n - 1)- n /2 - i - 1)))) {
+                if (((i <= n / 2 ) && ((j >= n / 2 - i) && (j <= i + n / 2))) || ((i > n / 2 ) && ((j >= i - n / 2) && (j <= (2 * n - 1)- n / 2 - i - 1)))) {
                     System.out.print('*');
                 }
                 else System.out.print(' ');
@@ -37,7 +37,7 @@ public class PrintDiamond {
 
             for (int j = 0; j < n; j++) {
 
-                if (((i <= n / 2 ) && ((j == n / 2 - i) || (j == i + n / 2))) || ((i > n/2 ) && ((j == i - n / 2) || (j == (2 * n - 1)- n / 2 - i -1)))) {
+                if (((i <= n / 2 ) && ((j == n / 2 - i) || (j == i + n / 2))) || ((i > n / 2 ) && ((j == i - n / 2) || (j == (2 * n - 1)- n / 2 - i - 1)))) {
                     System.out.print('*');
                 }
                 else System.out.print(' ');
