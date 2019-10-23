@@ -6,7 +6,7 @@ public class PrintDiamond {
 
     public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in); 
+	Scanner sc = new Scanner(System.in); 
         /* 实心菱形 */
 
         int n = sc.nextInt();
