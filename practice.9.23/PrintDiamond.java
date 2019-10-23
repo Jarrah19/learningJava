@@ -12,7 +12,7 @@ public class PrintDiamond {
         int n = sc.nextInt();
 
         if( n % 2 == 0) {
-            n = n - 1;
+            n --;
         }
         for (int i = 0; i < n; i++) {
 
