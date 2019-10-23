@@ -6,14 +6,17 @@ public class PrintDiamond {
 
     public static void main(String[] args) {
 		
-	Scanner sc = new Scanner(System.in); 
-        /* 实心菱形 */
-
-        int n = sc.nextInt();
+	Scanner sc = new Scanner(System.in);
+	    
+	int n = sc.nextInt();
 
         if( n % 2 == 0) {
-            n --;
+		
+		n --;
         }
+	    
+        /* 实心菱形 */
+	    
         for (int i = 0; i < n; i++) {
 
             for (int j = 0; j < n; j++) {
