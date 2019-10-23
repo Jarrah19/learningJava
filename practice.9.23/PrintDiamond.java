@@ -1,16 +1,24 @@
 package banyuan.com;
 
+import java.util.Scanner;
+
 public class PrintDiamond {
 
     public static void main(String[] args) {
-
+		
+		Scanner sc = new Scanner(System.in); 
         /* 实心菱形 */
 
-        for (int i = 0; i < 5; i++) {
+        int n = sc.nextInt();
 
-            for (int j = 0; j < 5; j++) {
+        if( n % 2 == 0) {
+            n = n - 1;
+        }
+        for (int i = 0; i < n; i++) {
 
-                if (((i <= 2) && ((j >= 2 - i) && (j <= i + 2))) || ((i > 2) && ((j >= i - 2) && (j <= 6 - i)))) {
+            for (int j = 0; j < n; j++) {
+
+                if (((i <= n / 2 ) && ((j >= n / 2 - i) && (j <= i + n / 2))) || ((i > n/2 ) && ((j >= i - n / 2) && (j <= (2 * n - 1)- n /2 - i -1)))) {
                     System.out.print('*');
                 }
                 else System.out.print(' ');
@@ -22,11 +30,11 @@ public class PrintDiamond {
 
         /* 空心菱形 */
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < n; i++) {
 
-            for (int j = 0; j < 5; j++) {
+            for (int j = 0; j < n; j++) {
 
-                if (((i <= 2) && ((j == 2 - i) || (j == i + 2))) || ((i > 2) && ((j == i - 2) || (j == 6 - i)))) {
+                if (((i <= n / 2 ) && ((j == n / 2 - i) || (j == i + n / 2))) || ((i > n/2 ) && ((j == i - n / 2) || (j == (2 * n - 1)- n / 2 - i -1)))) {
                     System.out.print('*');
                 }
                 else System.out.print(' ');
