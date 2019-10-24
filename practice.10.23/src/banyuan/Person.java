@@ -14,6 +14,14 @@ public class Person {
         this.gender = gender;
     }
 
+    public void setInfo(String name, int age, String address, String gender) {
+
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.gender = gender;
+    }
+
     public String getName() {
 
         return name;
@@ -37,21 +45,10 @@ public class Person {
 
     public void swapPerson (Person one) {
 
-        int temp = this.getAge();
-        this.age = one.getAge();
-        one.age = temp;
+        Person temp = new Person(one.getName(), one.getAge(), one.getAddress(), one.getGender());
+        one.setInfo(this.getName(),this.getAge(), this.getAddress(), this.getGender());
+        this.setInfo(temp.getName(),temp.getAge(), temp.getAddress(), temp.getGender());
 
-        String tempStr = this.getName();
-        this.name = one.getName();
-        one.name = tempStr;
-
-        tempStr = this.getAddress();
-        this.address = one.getAddress();
-        one.address = tempStr;
-
-        tempStr = this.getGender();
-        this.gender = one.getGender();
-        one.gender = tempStr;
     }
 
     public String toString() {
