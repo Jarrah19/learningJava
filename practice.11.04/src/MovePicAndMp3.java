@@ -23,8 +23,6 @@ public class MovePicAndMp3 {
             }
         });
 
-        System.out.println(fileArray.length);
-
         for (File f: fileArray) {
 
             FileInputStream is = new FileInputStream(f);
