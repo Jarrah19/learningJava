@@ -65,12 +65,12 @@ public class Test {
                     function();
                 }
             }
+            System.out.println("密码错误! 请重新输入: ");
             password = sc.next().trim();
-            if (count++ == 3) {
+            if (count++ == 1) {
                 System.out.println("错误次数过多, 将退出系统");
                 System.exit(0);
             }
-            System.out.println("密码错误! 请重新输入: ");
         } while (flag);
     }
 
